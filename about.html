@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indians99/About</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Raj Gupta </div>
+      <div class="togglebtn">
+        <div id="one" class="bar"></div>
+        <div id="two" class="bar"></div>
+        <div id="three" class="bar"></div>
+      </div>
+      <div class="navitems">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img class="navicon" src="items/web-house-.png" alt="" /> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><img class="navicon" src="items/user.png" alt="" /> About</a
+            >
+          </li>
+          <li>
+            <a href="Fun.html" target="_blank"
+              ><img class="navicon" src="items/game.png" alt="" /> Fun</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="about">
+      <div data-aos="fade-up" class="about-text">
+        <h2 class="abouthead">Know Who I'M</h2>
+        <p class="f-para">
+          Hello Everyone, I am
+          <span class="text-color">Gupta Raj Gopalbhai </span> from
+          <span class="text-color">Visnagar, India.</span>.
+          <br />
+          I am S.Y. B.Tech. Computer Engineering student from
+          <br />
+          <a href="https://spu.ac.in/" target="_blank" class="text-color"
+            >SPU</a
+          >
+          , Visnagar.
+          <br />
+          <br />
+          Apart from coding, some other activities that I love to do!
+        </p>
+        <ul class="skill-list">
+          <li>
+            <img src="cheak.svg" class="list-icon" alt="" /> Watching tech
+            course from Udemy, Coursera, Skillshare...
+          </li>
+          <li>
+            <img src="cheak.svg" class="list-icon" alt="" /> Playing Chess
+            Critical thinking the problems people daily face and Try to find
+            some Technical solution(Like any idea for software) for that
+            problem.
+          </li>
+          <li>
+            <img src="cheak.svg" class="list-icon" alt="" /> Critical thinking
+            the problems people daily face and Try to find some Technical
+            solution(Like any idea for software) for that problem.
+          </li>
+        </ul>
+        <div class="about-footer">
+          <p class="text-color" style="font-weight: 600">
+            "Always learning make us better everyday!"
+          </p>
+          <p style="opacity: 0.4; font-weight: 600">-> Raj Gupta </p>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <img class="about-img" src="about.png" alt="" />
+      </div>
+    </section>
+
+    <section data-aos="fade-up" class="Pro-skill-tools">
+      <h1 class="skill-tools-head">
+        My Pro <span class="text-color">Skills...</span>
+      </h1>
+      <div class="items">
+        <div class="item">
+          <img class="skill-img" src="skill/js.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="skill/c.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="skill/c++.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="skill/css.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="skill/py1.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="skill/html.png" alt="" />
+        </div>
+        <div class="item">
+          <img
+            class="skill-img"
+            width="150"
+            height="90"
+            src="skill/tailwind-css-icon@4x.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" class="Pro-skill-tools">
+      <h1 class="skill-tools-head">
+        <span class="text-color">Tools</span> I daily use!
+      </h1>
+      <div class="items">
+        <div class="item">
+          <img class="skill-img" src="tools/vs.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="tools/mac.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="tools/linux1.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="tools/ps.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="skill-img" src="tools/lr.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">Copyright © 2022 Raj Gopalbhai Gupta </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 600,
+        delay: 100,
+        easing: "ease",
+      });
+
+      const togglebtn = document.querySelector(".togglebtn");
+      const items = document.querySelector(".navitems ul");
+      const one = document.querySelector("#one");
+      const two = document.querySelector("#two");
+      const three = document.querySelector("#three");
+
+      togglebtn.addEventListener("click", () => {
+        items.classList.toggle("active");
+        one.classList.toggle("one");
+        two.classList.toggle("two");
+        three.classList.toggle("three");
+      });
+    </script>
+  </body>
+</html>

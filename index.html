@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj Gopalbhai Gupta </title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Raj Gupta </div>
+      <div class="togglebtn">
+        <div id="one" class="bar"></div>
+        <div id="two" class="bar"></div>
+        <div id="three" class="bar"></div>
+      </div>
+      <div class="navitems">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img class="navicon" src="items/web-house-.png" alt="" /> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><img class="navicon" src="items/user.png" alt="" /> About</a
+            >
+          </li>
+          <li>
+            <a href="Fun.html" target="_blank"
+              ><img class="navicon" src="items/game.png" alt="" /> Fun</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section data-aos="zoom-in" id="home" class="box">
+      <h1 class="head">Hello There!</h1>
+      <h1 class="secname">I'm <strong class="name">Raj Gupta </strong></h1>
+      <div class="box1">
+        <ul class="dynamic">
+          <li><span> Blockchain Devloper </span></li>
+          <li><span>Web Designer</span></li>
+          <li><span>Full stack Devloper</span></li>
+          <li><span>Programmer</span></li>
+          <li><span>Event Management</span></li>
+          <li><span>Team Leading</span></li>
+          <li><span>Learn Concept of Cybersecurity</span></li>
+        </ul>
+      </div>
+    </section>
+    <div>
+      <img
+        src="items/home-2.9e0a58a7.svg"
+        alt=""
+        class="img"
+      />
+    </div>
+    <section data-aos="fade-up" id="About" class="About">
+      <h2 class="introhead">
+        Let Me <span class="colorsame">Introduce</span> Myself
+      </h2>
+      <div class="style1">
+        I am loving and learning programming. This journey is wonderful. iam
+        staring my coding journeya from 2020.
+      </div>
+      <div class="style1">
+        I am fluent in core fundamentals like
+         
+        <span class="colorsame">Javascript</span>
+        <span class="colorsame">Html</span>
+         <span class="colorsame">Css</span>  
+          <span class="colorsame">Php</span> and
+           <span class="colorsame">MySql</span>.
+      </div>
+      <div class="style1">
+        My field of Interest's are building and deploying
+        <span class="colorsame">Web Applications</span>.
+      </div>
+      <div class="style1">
+        from past 2 years, I have strengthened various topics like
+        <span class="colorsame">DS & Algo, HTML5, CSS3, C, C++,Java etc.</span>
+      </div>
+    </section>
+    <div data-aos="fade-right" class="img1">
+      <img src="items/home-d.8fc5e71b.svg" alt="" class="img1pic" />
+    </div>
+
+    <section id="contectme" class="sec3">
+      <h2 class="sec3head">FIND ME ON</h2>
+      <div class="contect">
+        Feel free to <span class="colorsame">connect</span> with me
+      </div>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/rajveer-gupta-a08782182"
+          target="_blank"
+        >
+          <img class="icon icon1" src="items/linkedin.svg" alt="" />
+        </a>
+        <a
+          href="https://www.instagram.com/guptawrc/?hl=en"
+          target="_blank"
+        >
+          <img class="icon icon2" src="items/instagram.svg" alt="" />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="foot">Copyright © 2022 RajGupta</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 800,
+        delay: 200,
+        easing: "ease",
+      });
+
+      const logo = document.querySelector(".logo");
+      logo.addEventListener("click", () => {
+        window.location.reload();
+      });
+      VanillaTilt.init(document.querySelector(".img"), {
+        max: 20,
+        speed: 400,
+        glare: true,
+        "max-glare": 1.5,
+      });
+      VanillaTilt.init(document.querySelector(".img1pic"), {
+        max: 20,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelector(".img"));
+      VanillaTilt.init(document.querySelector(".img1pic"));
+
+      const togglebtn = document.querySelector(".togglebtn");
+      const items = document.querySelector(".navitems ul");
+      const one = document.querySelector("#one");
+      const two = document.querySelector("#two");
+      const three = document.querySelector("#three");
+
+      togglebtn.addEventListener("click", () => {
+        items.classList.toggle("active");
+        one.classList.toggle("one");
+        two.classList.toggle("two");
+        three.classList.toggle("three");
+      });
+    </script>
+  </body>
+</html>
